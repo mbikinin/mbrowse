@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 gem 'rails', '3.2.14'
-gem 'sqlite3'
+gem 'mysql2'
+
+gem "jquery-ui-rails"
+gem 'activeadmin'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -9,7 +12,7 @@ group :assets do
 end
 gem 'jquery-rails'
 gem 'bootstrap-sass'
-gem 'cancan'
+#gem 'cancan'
 gem 'devise'
 gem 'figaro'
 gem 'rolify'
@@ -20,13 +23,13 @@ group :development do
   gem 'quiet_assets'
 end
 group :development, :test do
-  gem 'factory_girl_rails'
-  gem 'rspec-rails'
+  #gem 'factory_girl_rails'
+  #gem 'rspec-rails'
 end
 group :test do
-  gem 'capybara'
-  gem 'cucumber-rails', :require=>false
-  gem 'database_cleaner', '1.0.1'
-  gem 'email_spec'
-  gem 'launchy'
+  #gem 'capybara'
+ # gem 'cucumber-rails', :require=>false
+ # gem 'database_cleaner', '1.0.1'
+ # gem 'email_spec'
+ # gem 'launchy'
 end
