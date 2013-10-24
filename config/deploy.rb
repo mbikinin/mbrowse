@@ -22,6 +22,7 @@ set :deploy_to, "/var/www/#{application}"
 set :use_sudo, false
 set :unicorn_conf, "#{deploy_to}/current/config/unicorn.rb"
 set :unicorn_pid, "#{deploy_to}/shared/pids/unicorn.pid"
+set :unicorn_bin, "unicorn_rails"
 
 set :rvm_ruby_string, 'ruby-2.0.0-p0' # Это указание на то, какой Ruby интерпретатор мы будем использовать.
 #set :rvm_bin_path, "/usr/local/rvm/bin"
