@@ -14,7 +14,7 @@ group :assets do
 end
 gem 'jquery-rails'
 gem 'bootstrap-sass'
-#gem 'cancan'
+gem 'cancan'
 gem 'devise'
 gem 'figaro'
 gem 'rolify'
