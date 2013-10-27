@@ -6,7 +6,7 @@
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Mbrowse.ru" %>">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-    <%= stylesheet_link_tag "application", "style", :media => "all" %>
+    <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald%7COpen+Sans:300%7CPT+Sans+Narrow%7CNova+Square%7CLobster&subset=latin,latin,latin,latin,latin" />
     <%= csrf_meta_tags %>
