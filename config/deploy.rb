@@ -43,16 +43,16 @@ before 'deploy:setup', 'rvm:install_rvm', 'rvm:install_ruby' # интеграц�
 
 load 'deploy/assets' # assets:precompile etc
 namespace :deploy do
-  namespace :db do
-    task :create do
-      run %Q{cd #{current_release} && #{rake} RAILS_ENV=#{rails_env} db:create}
+  namespace :custom do
+    namespace :migrate do
+      task :reset do
+        run %Q{cd #{latest_release} && RAILS_ENV=#{rails_env} #{rake} db:migrate:reset}
+      end
+       desc "Seed the database on already deployed code"
+       task :seed, :only => {:primary => true}, :except => { :no_release => true } do
+        run "cd #{current_path}; RAILS_ENV=#{rails_env} bundle exec rake db:seed"
+       end 
     end
-    task :migrate do
-      run %Q{cd #{current_release} && #{rake} RAILS_ENV=#{rails_env} db:migrate:reset}
-    end
-   task :populate do
-     run %Q{cd #{current_release} && #{rake} RAILS_ENV=#{rails_env} db:populate}
-   end
   end
  namespace :user do
     task :bundle do
