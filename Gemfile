@@ -3,7 +3,6 @@ ruby '2.0.0'
 gem 'rails', '3.2.14'
 gem 'mysql2'
 
-
 gem "jquery-ui-rails"
 gem 'activeadmin'
 group :assets do
@@ -12,7 +11,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'therubyracer', :platforms => :ruby
 end
-gem 'jquery-rails'
+#gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'cancan'
 gem 'devise'
