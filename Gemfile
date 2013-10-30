@@ -5,6 +5,10 @@ gem 'mysql2'
 
 gem "jquery-ui-rails"
 gem 'activeadmin'
+
+gem "jquery-ui-rails"
+gem 'tinymce-rails', '~> 3.5.8'
+gem 'tinymce-rails-imageupload', '~> 3.5.6.3'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -18,6 +22,7 @@ gem 'devise'
 gem 'figaro'
 gem 'rolify'
 gem 'simple_form'
+gem 'paperclip'
 group :development do
   gem 'better_errors'
   #gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
