@@ -1,0 +1,33 @@
+<div class="scroll-container">
+
+			<h3>ТОП-10</h3>
+			
+			<div class="scroller_wrap">
+				<div class="scroller_block">
+					<ul style="width:2480px">
+						<% @top10.each do |of| %>
+						<li>
+							<div class="image_box">
+							<%= link_to image_tag("http://cityads.ru" + Banner.where("offer_id=#{of.id} and width/height < 2.5 and width > 200").order("RAND()").first.bannersrc), offer_path(of.id) %>
+							</div>
+							<div class="scroll-caption">
+								<span>PC</span>
+								<h6><%= link_to of.name, offer_path(of.id)%></h6>
+								<div class="star"></div>
+							</div>
+						</li>
+						<% end %>
+						
+					</ul>
+				</div><!--/ .sroller_block-->
+				<div class="scroller_slider">
+					<a href="#" class="scroller_slider_prev"></a>
+					<a href="#" class="scroller_slider_next"></a>
+					<div class="scroller_slider_bar"></div>
+				</div><!--/ .scroller_slider-->
+			</div><!--/ .scroller_wrap-->
+			
+
+			
+			
+		</div><!--/ .content-container-->

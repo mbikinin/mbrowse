@@ -1,0 +1,26 @@
+<div id="showcase" class="showcase">
+	<% Slider.all.each do |s| %>
+	<div class="showcase-slide">
+		<!-- Put the slide content in a div with the class .showcase-content. -->
+		<div class="showcase-entry">
+			<%= image_tag s.image.url(:main) %>
+		</div>
+		<!-- Put the thumbnail content in a div with the class .showcase-thumbnail -->
+		<div class="showcase-thumbnail">
+			<%= image_tag s.image.url(:mini) %>
+			<span class="showcase-thumbnail-console"><%= s.platform.title %></span>
+			<h6 class="showcase-thumbnail-title"><%= link_to s.title, s.link %></h6>
+		</div>
+		<!-- Put the caption content in a div with the class .showcase-caption -->
+		<div class="showcase-caption clearfix">
+			<h2><%= s.title %></h2>
+			<div class="showcase-description">
+				<%= raw s.body %>
+			</div>
+			<a href="<%= s.link %>" class="button small red align-btn-right">Подробнее...</a>
+			<div class="star"></div>
+		</div>
+	</div>
+	<% end %>
+
+</div>

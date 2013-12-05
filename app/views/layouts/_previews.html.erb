@@ -1,0 +1,42 @@
+			<div class="one-third">
+					<div class="reviews">
+						
+						<div class="title-caption">
+							<h3>Анонсы</h3>
+						</div><!--/ .title-->
+						
+						<div class="gamelist">
+							<ul class="clearfix">
+								<% @offer_preview.each do |offer|%>
+									<% image = "http://cityads.ru" + Banner.where("offer_id=#{offer.id} and width/height < 2.5 and width > 200").order("RAND()").first.bannersrc %>
+									<li>
+										<% if offer.id == @offer_preview.first.id %>
+										<div class="image_box">
+											<%= link_to image_tag(image, :class=>:large_img), offer_path(offer.id) %>
+										</div>
+										<% else %>
+										<%= link_to image_tag(image, :width=>"160" , :height=>"100" ), offer_path(offer.id) %>
+										<% end %>
+									
+										<div class="caption">
+											<h5 class="title"><%= link_to offer.name, offer_path(offer.id)%></h5>
+											<div class="description">
+												<%= raw  offer.description %>
+											</div>
+											<a href="#" class="comments-icon">25 comments</a>
+											<div class="platform-teaser">
+												<a href="#" class="xbox">Xbox360</a>
+											</div><!--/ .platform-teaser-->
+											<div class="star"></div>
+										</div><!--/ .caption-->
+										<div class="clear"></div>
+									</li>
+								<% end %>
+							</ul>
+							<a href="#" class="see-all">See all &raquo;</a>
+						</div><!--/ .gamelist-->
+					</div><!--/ .reviews-->		
+				</div><!--/ .one-third-->
+				<!-- *************** - END Reviews - *************** -->
+	
+	

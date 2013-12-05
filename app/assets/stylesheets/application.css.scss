@@ -77,3 +77,38 @@ footer{
         width: 1170px;
     }
 }
+.tabs-container, .reviews{
+  .image_box{
+    width: 310px;
+    height: 218px;
+    border: solid 1px #e1e1e1;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    .large_img{
+      min-height: 220px;
+      width :313px;
+    }
+  }
+}
+.scroller_block{
+  .image_box{
+    background: none repeat scroll 0 0 #000000;
+    border: 1px solid #444444;
+    display: table-cell;
+    height: 300px;
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+    width: 230px;
+    img{
+      max-height: 290px;
+      max-width: 225px;
+    }
+  }
+}
+.one-third{
+  .image-box{
+    width: 300px
+  }
+}

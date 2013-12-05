@@ -1,0 +1,43 @@
+<div class="tabs-1">
+					
+					<ul class="tabs-nav clearfix">
+						<li><a href="#tab1">Новинки</a></li>
+						<li><a href="#tab2">Популярные</a></li>
+						<li><a href="#tab3">Рекомендуем</a></li>
+					</ul><!--/ .tabs-nav -->
+
+					<div class="tabs-container">
+
+						<div class="tab-content" id="tab1">
+							<div class="gamelist">
+								<ul class="clearfix">
+									<%= render @offer_nova, :object=> @offer_nova %>
+								</ul>	
+								<a href="#" class="button small yellow align-btn-right">More Latest</a>
+							</div><!--/ .gamelist-->
+
+						</div><!--/ #tab1-->
+
+						<div class="tab-content" id="tab2">
+
+							<div class="gamelist">
+								<ul class="clearfix">
+									<%= render @offer_popular, :object=> @offer_popular %>
+								</ul>
+								<a href="#" class="button small yellow align-btn-right">More Latest</a>
+							</div><!--/ .gamelist-->
+
+						</div><!--/ #tab1-->
+
+						<div class="tab-content" id="tab3">
+
+							<div class="gamelist">
+								<ul class="clearfix">
+									<%= render @offer_recomend, :object=> @offer_recomend %>
+								</ul>
+								<a href="#" class="button small yellow align-btn-right">More Latest</a>
+							</div><!--/ .gamelist-->
+
+						</div><!--/ #tab1-->
+					</div><!--/ .tabs-container-->
+				</div><!--/ .tabs-1-->

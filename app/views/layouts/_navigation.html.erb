@@ -1,26 +1,26 @@
-<%= link_to "Mbrowse.ru", root_path, :class => 'brand' %>
-<ul class="nav" style="display:none">
-  <% if user_signed_in? %>
-    <li>
-    <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %>
-    </li>
-  <% else %>
-    <li>
-    <%= link_to 'Login', new_user_session_path %>
-    </li>
-  <% end %>
-  <% if user_signed_in? %>
-    <li>
-    <%= link_to 'Edit account', edit_user_registration_path %>
-    </li>
-    <% if current_user.has_role? :admin %>
-      <li>
-      <%= link_to 'Admin', users_path %>
-      </li>
-    <% end %>
-  <% else %>
-    <li>
-    <%= link_to 'Sign up', new_user_registration_path %>
-    </li>
-  <% end %>
-</ul>
+<nav id="navigation" class="navigation">
+	<ul>
+		<% Menu.top.each do |t| %>
+			<li>
+				<%= link_to t.title, t.uri.nil? ? (Menu.find_by_parent_id(t.id).uri.nil? ? Menu.find_by_parent_id(t.id).uri : "#") : t.uri, :class=>"child" %> <div class="downarrowclass"></div>
+				<% Menu.find_all_by_parent_id(t.id).each do |child| %>
+				<ul class="sub-menu">
+					<li>
+						<%= link_to child.title, (child.uri.nil? || child.uri.empty? ? category_path(child.id) : child.uri )  %>
+					</li>
+				</ul>
+				<% end %>
+			</li>
+		<% end %>
+	</ul>
+	<div class="account-wrapper">
+		<ul id="user-account-nav">
+			<li>
+				<a href="/">Login</a>
+			</li>
+			<li>
+				<a href="/">Create an account</a>
+			</li>
+		</ul><!--/ #user-account-nav-->
+	</div><!--/ .account-wrapper-->
+</nav>

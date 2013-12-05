@@ -219,7 +219,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
 	color: #3b3a3a;
 	font-weight: normal;
-	font-family: 'Oswald', Arial, sans-serif;
+	font-family: 'Andika', sans-serif, Arial, sans-serif;
 }
 
 h1 {
@@ -261,7 +261,7 @@ h6 {
 }
 
 .h-style-1 h1, .h-style-1 h2, .h-style-1 h3, .h-style-1 h4, .h-style-1 h5, .h-style-1 h6 {
-	font-family: 'Oswald';
+	font-family: 'Andika', sans-serif;
 }
 
 .h-style-2 h1, .h-style-2 h2, .h-style-2 h3, .h-style-2 h4, .h-style-2 h5, .h-style-2 h6 {
@@ -280,7 +280,7 @@ blockquote {
     border-left: 4px solid #3b3a3a;
     color: #f15b19;
     font-size: 1.25em;
-	font-family: 'Oswald';
+	font-family: 'Andika', sans-serif;
 	line-height: 1.35em;
     margin-bottom: 1.5em;
     padding: 0 0 .15em 1.3em;
@@ -572,7 +572,7 @@ img.alignright,
 	
 	.inline-one-half.last {margin-right: 0;}
 
-	.one-third {width: 313px;}
+	.one-third {width: 300px;}
 	.one-fourth {width: 230px;}
 	.two-thirds {width: 647px;}
 	.one-half {width: 480px;}
@@ -759,7 +759,7 @@ section p {color: #9f9e9e;}
 	margin: 0 3px;
 	color: #959595;
 	font-size: 1.083em;
-	font-family: 'Oswald';
+	font-family: 'Andika', sans-serif;
 }
 
 .title-caption .browse a.active {color: #f15b19;}
@@ -780,7 +780,7 @@ section p {color: #9f9e9e;}
 	margin-right: 7px;
 	color: #fff;
 	text-transform: uppercase;
-	font-family: 'Oswald';
+	font-family: 'Andika', sans-serif;
 	font-size: 1.583em;
 	line-height: 1.9em;
 }
@@ -932,13 +932,13 @@ section p {color: #9f9e9e;}
 			background: url(../images/curtain.png) repeat;
 		}
 		
-			.showcase-caption .button {margin: 0; font-family: 'Oswald', Arial; text-transform: uppercase;}
+			.showcase-caption .button {margin: 0; font-family: 'Andika', sans-serif, Arial; text-transform: uppercase;}
 
 			.showcase-caption h2 {
 				color: #fff;
 				text-transform: uppercase;
 				font-size: 2.5em;
-				font-family: 'Oswald', Arial;
+				font-family: 'Andika', sans-serif, Arial;
 			}
 			
 			.showcase-caption .star {position: absolute; right: 13px; top: 20px;}
@@ -1017,7 +1017,7 @@ section p {color: #9f9e9e;}
 				font-size: 1em;
 			}
 			
-			.showcase-thumbnail-title {text-transform: uppercase; font-family: 'Oswald', Arial;}
+			.showcase-thumbnail-title {text-transform: uppercase; font-family: 'Andika', sans-serif, Arial;}
 			.showcase-thumbnail-title a:hover,
 			.showcase-thumbnail.active .showcase-thumbnail-title a {color: #fff !important;}
 			.showcase-thumbnail:hover .showcase-thumbnail-cover {display: none;}
@@ -1212,7 +1212,7 @@ section p {color: #9f9e9e;}
 	
 	.comment-author a {
 		color: #f15b19;
-		font-family: 'Oswald'; 
+		font-family: 'Andika', sans-serif; 
 	}
 	
 	.comment-reply {
@@ -1337,6 +1337,7 @@ section p {color: #9f9e9e;}
 	overflow: hidden;
 	padding: 20px 0;
 	border-top: 1px dashed #c5c5c5;
+
 }
 
 .release li, .top-games li {border-top: none; border-bottom: 1px dashed #c5c5c5;}
@@ -1663,7 +1664,7 @@ section p {color: #9f9e9e;}
 
 .tabs-1 .gamelist li:nth-child(1) h5,
 .tabs-1 .gamelist li:nth-child(2) h5,
-.reviews .gamelist li:nth-child(1) h5 {margin-bottom: .5em; text-transform: uppercase;}
+.reviews .gamelist li:nth-child(1) h5 {margin-bottom: .5em; text-transform: uppercase;line-height: 14px;}
 
 .reviews-content h5 {
 	margin-bottom: .5em; text-transform: uppercase;
@@ -1842,7 +1843,7 @@ section p {color: #9f9e9e;}
 	overflow: hidden;
 	line-height: 30px;
 	font-size: 1.167em;
-	font-family: 'Oswald';
+	font-family: 'Andika', sans-serif;
 	background: url(../images/icon-comments.png) no-repeat 0 -40px;
 }
 
@@ -1857,7 +1858,7 @@ section p {color: #9f9e9e;}
 	overflow: hidden;
 	line-height: 30px;
 	font-size: 1.167em;
-	font-family: 'Oswald';
+	font-family: 'Andika', sans-serif;
 	background: url(../images/icon-comments.png) no-repeat 0 -40px;	
 }
 
@@ -1959,7 +1960,7 @@ section p {color: #9f9e9e;}
 
 .rating .rating-title span {
 	color: #fff;
-	font-family: 'Oswald', Arial;
+	font-family: 'Andika', sans-serif, Arial;
 	text-transform: uppercase;
 }
 
@@ -1979,7 +1980,7 @@ section p {color: #9f9e9e;}
 	color: #fff;
 	font-size: 2em;
 	line-height: 1em;
-	font-family: 'Oswald', Arial;
+	font-family: 'Andika', sans-serif, Arial;
 }
 
 .top-games li:nth-child(1) .rating,
@@ -2198,7 +2199,7 @@ section p {color: #9f9e9e;}
 .reviews-content .gamelist .button.gray {display: none;}
 .reviews-content .gamelist li:nth-child(1) .button.gray  {
 	display: block;
-	font-family: 'Oswald';
+	font-family: 'Andika', sans-serif;
 	text-transform: uppercase;
 	font-size: 1.167em;
 	border-top: 1px solid #555;
@@ -2208,7 +2209,7 @@ section p {color: #9f9e9e;}
 .ie7 .reviews-content .gamelist li.child1 .button.gray,
 .ie8 .reviews-content .gamelist li.child1 .button.gray {
 	display: block;
-	font-family: 'Oswald';
+	font-family: 'Andika', sans-serif;
 	text-transform: uppercase;
 	font-size: 1.167em;
 	border-top: 1px solid #555;
@@ -2556,7 +2557,7 @@ table.profile-list {
 .e404 {padding: 1em 2em 1em;}
 
 .e404 h1 {
-	font-family: 'Oswald', Arial;
+	font-family: 'Andika', sans-serif, Arial;
 	margin-bottom: 0;
 	color: #f15b19;
 	font-size: 9em;
@@ -2566,7 +2567,7 @@ table.profile-list {
 .error404 .title-error {
 	color: #1a1a1b;
 	font-size: 2.5em;
-	font-family: 'Oswald';
+	font-family: 'Andika', sans-serif;
 	text-transform: uppercase;
 	line-height: 1.1em
 }
@@ -2905,7 +2906,7 @@ footer .copyright {
 	display: block;
 	padding: 0 20px !important;
 	font-size: 1.583em;
-	font-family: 'Oswald';
+	font-family: 'Andika', sans-serif;
 	line-height: 61px;
 }
 
@@ -3340,7 +3341,7 @@ footer .copyright {
 		background: -o-linear-gradient(rgb(241,177,25),rgb(241,134,25));
 		color: #f4f4f5;
 		font-size: 4.333em;
-		font-family: 'Oswald';
+		font-family: 'Andika', sans-serif;
 	}
 	
 	.dropcap {
@@ -3349,7 +3350,7 @@ footer .copyright {
 		color: #9f9e9e;
 		font-weight: 700;
 		font-size: 4.167em;
-		font-family: 'Oswald';
+		font-family: 'Andika', sans-serif;
 		line-height: 1em;
 	}
 	
@@ -3617,7 +3618,7 @@ footer .copyright {
 		color: #2a2b2b;
 		text-transform: uppercase;
 		font-size: 1.154em;
-		font-family: 'Oswald';
+		font-family: 'Andika', sans-serif;
 		line-height: 40px;
 	}
 	
@@ -3680,7 +3681,7 @@ footer .copyright {
 		text-transform: uppercase;
 		color: #929292;
 		font-size: 1.083em;
-		font-family: 'Oswald';
+		font-family: 'Andika', sans-serif;
 	}
 
 	/*--------------------------------*/
@@ -4096,7 +4097,7 @@ footer .copyright {
 		font-size: 1.75em;
 		text-align:center;
 		text-transform: uppercase;
-		font-family: 'Oswald';
+		font-family: 'Andika', sans-serif;
 		word-spacing: 3px;
 		line-height: 50px;
 	} 
@@ -4240,7 +4241,7 @@ footer .copyright {
 		color:#fff;
 		text-align:center;
 		font-size: 1.167em;
-		font-family: 'Oswald';
+		font-family: 'Andika', sans-serif;
 		text-transform: uppercase;
 	} 
 
@@ -4606,7 +4607,7 @@ footer .copyright {
 		text-decoration: none;
 		font-weight: 100;
 		font-size: 1.25em;
-		font-family: 'Oswald';
+		font-family: 'Andika', sans-serif;
 		cursor:pointer;
 		background: #f0f0f0;
 		background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f0f0f0));

@@ -1,4 +1,33 @@
-<h3>Home</h3>
-<% @users.each do |user| %>
-  <p>User: <%=link_to user.name, user %></p>
-<% end %>
+
+		<!-- ************** - Featured Slider - ************** -->
+			<%= render 'layouts/slider'%>
+
+		<!-- ************** - Scroll Container - ************** -->
+		
+			<%= render 'layouts/scroll'%>
+		<!-- ************** - END Content Container - ************** -->
+		
+		
+		<!-- ************** - Entry - ************** -->
+		<div class="entry sbr clearfix">
+
+
+			<!-- ************** - Content - ************** -->
+			<div id="content">
+				
+				
+				<!-- *************** - Tabs Container - *************** -->	
+				<%= render 'layouts/tabs' %>
+				<!-- *************** - END Tabs Container - *************** -->	
+		
+				
+				<!-- *************** - Reviews - *************** -->	
+				<%= render 'layouts/reviews'%>
+				
+				
+				<!-- *************** - Previews - *************** -->	
+				<%= render 'layouts/previews'%>
+				<!-- *************** - END Previews - *************** -->	
+				
+				
+			</div><!--/ #content-->

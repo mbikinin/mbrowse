@@ -9,6 +9,12 @@ gem 'activeadmin'
 gem "jquery-ui-rails"
 gem 'tinymce-rails', '~> 3.5.8'
 gem 'tinymce-rails-imageupload', '~> 3.5.6.3'
+
+gem 'awesome_nested_set'
+gem "the_sortable_tree", "~> 2.3.0"
+gem 'active_admin-awesome_nested_set'
+gem 'haml'
+gem 'russian', '~> 0.6.0'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
