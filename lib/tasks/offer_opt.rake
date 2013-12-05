@@ -20,7 +20,7 @@ namespace :opt do
   end
   
   task :img => :environment do
-    Banner.where("id>980").each do |b|
+    Banner.where("id>4134").each do |b|
       p b.id
       arr = Hash.new
       if b.bannersrc.include? "."
